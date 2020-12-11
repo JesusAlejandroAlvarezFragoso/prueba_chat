@@ -1,0 +1,29 @@
+// bar.component.sass
+$nav-color: #489e76
+
+.navbar
+  background-color: $nav-color
+  overflow: unset
+  height: 10vh
+  padding: 0
+
+  a
+    margin-left: 1rem
+    max-width: 70vw
+    overflow: hidden
+
+  .navbar-toggler
+    margin-right: 1rem
+
+  .navbar-collapse
+    background-color: lighten( $nav-color, 10% )
+    padding: 1rem
+    z-index:10
+    input
+      font-size: 0.9em
+      max-width: 145px
+      margin-left: 10px
+      border-color: black
+      background: transparent
+      border-style: none
+      border-bottom-style: groove

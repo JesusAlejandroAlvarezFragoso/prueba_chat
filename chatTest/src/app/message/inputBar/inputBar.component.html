@@ -1,0 +1,10 @@
+<div class="input-bar">
+	<input
+		placeholder="escribe un mensaje"
+		[(ngModel)]="message"
+		(keyup.enter)="send()"
+	/>
+	<button (click)="send()">
+		<i class="fa fa-paper-plane" aria-hidden="true"></i>
+	</button>
+</div>

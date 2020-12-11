@@ -1,0 +1,14 @@
+<div class="message-container">
+	<div class="messages">
+		<div *ngFor="let message of messages"
+	        class="message"
+			[class.mine]="isMyMessage(message)">
+			<p class="author"> {{message.user.name}} </p>
+			<p class="body"> {{message.body}} </p>
+			<p class="date"> {{message.date}} </p>
+		</div>
+	</div>
+	<message-inputBar
+		[messageService]="messageService">
+	</message-inputBar>
+</div>
